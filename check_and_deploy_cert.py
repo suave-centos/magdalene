@@ -50,7 +50,7 @@ def verify_signature(script_path):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python verify_and_run_cert.py <script.py>")
+        print("Usage: python check_and_deploy_cert.py <script.py>")
         sys.exit(1)
 
     script = sys.argv[1]
