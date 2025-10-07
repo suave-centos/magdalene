@@ -1,0 +1,1 @@
+python3 check_and_deploy_cert.py cleanup.py
