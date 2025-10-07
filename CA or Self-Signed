@@ -1,0 +1,6 @@
+# 1. Generate a 4096-bit private key
+openssl genrsa -out signer.key 4096
+
+# 2. Create a self-signed certificate valid for 3 years
+openssl req -x509 -new -key signer.key -out signer.crt -days 1095 \
+  -subj "/CN=Internal Script Signing Authority/O=YourOrg"
